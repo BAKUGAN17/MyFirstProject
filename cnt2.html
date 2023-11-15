@@ -5,5 +5,45 @@
 {% endblock %}
 
 {% block body %}
-<h1>Расчёт калорий при нагрузке</h1>
+
+<h1 class="text-center">Расчёты дневной нормы калорий</h1>
+<div  class="preview-text lead text-center" itemprop="articleBody">
+    </div>
+<hr>
+
+<table>
+	<thead>
+		<tr>
+			<th>Данные для расчета:</th>
+
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>
+			<table>
+				<tbody>
+					<form>
+						<h3 class="text-center"> </h3>
+                                <p>Ваш рост: <input type="text" name="h" size="6" value=""> см</p>
+                                <p>Ваш вес: <input type="text" name="w" size="6" value=""> кг</p>
+                            	<p>Ваш возраст: <input type="text" name="a" size="6" value=""> г</p>
+                                <p>Выберите пол:<select name="lstSex" size="1" id="sexImt"> <option value="5">Муж</option> <option value="-161">Жен</option> </select></p>
+                                <p>Выберите свой режим тренировок:<select name="Trenit" size="1" id="tre"> <option value="1.2">Физ. нагрузка отсутствует или минимальная</option> <option value="1.38">Умеренная активность 3 раза в неделю</option> <option value="1.46">Тренировки средней интенсивности 5 раз в неделю</option> <option value="1.55">Интенсивные тренировки 5 раз в неделю</option> <option value="1.64">Ежедневные тренировки</option> <option value="1.73">Интенсивные тренировки каждый день</option> <option value="1.9"> Ежедневная физ. нагрузка + физическая работа </option> </select></p>
+                                <p>Норма калорий в день: <output name="sdf">0</output> калорий</p>
+                              <p><input type="button" onclick="sdf.value=(((parseFloat(w.value) * 10) + (parseFloat(h.value) * 6.25) - (parseFloat(a.value)) + (parseFloat(sexImt.value))) * (parseFloat(tre.value))).toFixed(0)" value="Вычислить"></p>
+
+                    </form>
+				</tbody>
+			</table>
+			</td>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+
+
+
+</h1>
 {% endblock %}
