@@ -15,87 +15,19 @@
 Формула <b>ИМТ</b> = вес (в килограммах) : (рост (см) : 100)<sup>2 </sup>
 </p>
 <form>
-    <p>Ваш рост: <input type="text" name="a" size="6" value="0"> м</p>
+    <p>Ваш рост: <input type="text" name="a" size="6" value="0"> см</p>
     <p>Ваш вес: <input type="text" name="h" size="6" value="0"> кг</p>
-	<p>Выберите пол:<select name="lstSex" size="1" id="sexImt"> <option value="21.5">Муж</option> <option value="23">Жен</option> </select></p>
     <p>ИМТ: <output name="out">0</output> кг/м²</p>
-    <p><input type="button" onclick="out.value=(parseFloat(h.value)/Math.pow(parseFloat(a.value), 2)).toFixed(3)" value="Вычислить ИМТ"></p>
+    <p><input type="button" onclick="out.value=(parseFloat(h.value)/Math.pow(parseFloat(a.value / 100), 2)).toFixed(3)" value="Вычислить ИМТ"></p>
 </form>
 
-    <tr>
-		<th colspan="2">Классификация ожирения по ИМТ и риск сопутствующих заболеваний</th>
-	</tr>
-
-	<tr>
-		<td colspan="2">
-			<div class="table-responsive-md">
-	<table class="table" style="margin: 0 auto;" border="1" cellpadding="5" cellspacing="0">
-	<tbody>
-	<tr>
-		<td>
-			Менее 16
-		</td>
-		<td>
-			Выраженный недостаток массы тела
-		</td>
-	</tr>
-	<tr>
-		<td>
-			16-18,5
-		</td>
-		<td>
-			Дефицит массы тела
-		</td>
-	</tr>
-	<tr>
-		<td>
-			18,5-25
-		</td>
-		<td>
-			Нормальный вес
-		</td>
-	</tr>
-	<tr>
-		<td>
-			25-30
-		</td>
-		<td>
-			Предожирение
-		</td>
-	</tr>
-	<tr>
-		<td>
-			31-35
-		</td>
-		<td>
-			Ожирение первой степени
-		</td>
-	</tr>
-	<tr>
-		<td>
-			35-42
-		</td>
-		<td>
-			Ожирение второй степени
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Более 42
-		</td>
-		<td>
-			Ожирение третьей степени
-		</td>
-	</tr>
-	</tbody>
-	</table>
 </div>
 <table>
 	<thead>
 		<tr>
-			<th>ИМТ при возрасте 18-25 лет</th>
-			<th>ИМТ при возрасте более 25 лет</th>
-			<th>Состояние здоровья</th>
+			<th>ИМТ при возрасте 18-25 летㅤㅤ</th>
+			<th>ИМТ при возрасте более 25 летㅤㅤ</th>
+			<th>Состояние здоровьяㅤ</th>
 			<th>Угроза здоровью</th>
 			<th>Ваши действия</th>
 		</tr>
@@ -105,7 +37,7 @@
 		<tr>
 			<td>Менее 17,5</td>
 			<td>Менее 17,5</td>
-			<td>Анорексия (нервная/атароксическая)</td>
+			<td>Анорексия (нервная/атароксическая)ㅤ</td>
 			<td>Присутствует, высокая</td>
 			<td>Лечение анорексии, увеличение массы тела</td>
 		</tr>
@@ -154,7 +86,7 @@
 			<td>35-39,9</td>
 			<td>36-40,9</td>
 			<td>Ожирение третьей степени</td>
-			<td>Присутствует, существенно высокая</td>
+			<td>Присутствует, существенно высокаяㅤ</td>
 			<td>Крайне желательно уменьшение массы тела</td>
 		</tr>
 
